@@ -286,15 +286,21 @@
   "15": {
     "endpoint": "Add a song to a specific album based on albumId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/albums/:albumId/songs",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "name": true, "trackNumber": true, "lyrics": true }
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": { "Content-Type": "application/json" },
+      "statusCode": 201,
+      "body": {
+        "name": true,
+        "songId": true,
+        "trackNumber": true,
+        "albumId": true,
+        "lyrics": true
+      }
     }
   },
   "16": {
