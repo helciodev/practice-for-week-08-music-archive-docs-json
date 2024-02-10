@@ -191,29 +191,45 @@
   "11": {
     "endpoint": "Get all songs of a specific artist based on artistId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "GET",
+      "URL": "/artists/:artistId/songs",
+      "headers": false,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": { "Content-Type": "application/json" },
+      "statusCode": 200,
+      "body": [
+        {
+          "name": true,
+          "songId": true,
+          "lyrics": true,
+          "albumId": true,
+          "trackNumber": true
+        }
+      ]
     }
   },
   "12": {
     "endpoint": "Get all songs of a specific album based on albumId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "GET",
+      "URL": "/albums/:albumId/songs",
+      "headers": false,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": { "Content-Type": "application/json" },
+      "statusCode": 200,
+      "body": [
+        {
+          "name": true,
+          "songId": true,
+          "lyrics": true,
+          "albumId": true,
+          "trackNumber": true
+        }
+      ]
     }
   },
   "13": {
