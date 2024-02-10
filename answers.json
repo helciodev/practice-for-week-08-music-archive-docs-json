@@ -257,15 +257,30 @@
   "14": {
     "endpoint": "Get a specific song's details based on songId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "GET",
+      "URL": "/songs/:songId",
+      "headers": false,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": { "Content-Type": "application/json" },
+      "statusCode": 200,
+      "body": {
+        "name": true,
+        "songId": true,
+        "lyrics": true,
+        "albumId": true,
+        "trackNumber": true,
+        "album": {
+          "name": "California",
+          "albumId": 1,
+          "artistId": 1
+        },
+        "artist": {
+          "name": "jason",
+          "artistId": 1
+        }
+      }
     }
   },
   "15": {
