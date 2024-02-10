@@ -235,15 +235,23 @@
   "13": {
     "endpoint": "Get all songs of a specified trackNumber",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "GET",
+      "URL": "/tracknumbers/:trackId/songs",
+      "headers": false,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": { "Content-Type": "application/json" },
+      "statusCode": 200,
+      "body": [
+        {
+          "name": true,
+          "songId": true,
+          "lyrics": true,
+          "albumId": true,
+          "trackNumber": true
+        }
+      ]
     }
   },
   "14": {
