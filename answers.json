@@ -177,15 +177,15 @@
   "10": {
     "endpoint": "Delete a specified album by albumId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "DELETE",
+      "URL": "/albums/:albumId",
+      "headers": false,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": { "Content-Type": "application/json" },
+      "statusCode": 200,
+      "body": { "message": true }
     }
   },
   "11": {
