@@ -306,29 +306,35 @@
   "16": {
     "endpoint": "Edit a specified song by songId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "PUT",
+      "URL": "/songs/:songId",
+      "headers": { "Content-Type": "application/json" },
+      "body": { "name": true, "trackNumber": true, "lyrics": true }
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": { "Content-Type": "application/json" },
+      "statusCode": 200,
+      "body": {
+        "name": true,
+        "songId": true,
+        "albumId": true,
+        "trackNumber": true,
+        "lyrics": true
+      }
     }
   },
   "17": {
     "endpoint": "Delete a specified song by songId",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "DELETE",
+      "URL": "/songs/:songId",
+      "headers": false,
+      "body": false
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": { "Content-Type": "application/json" },
+      "statusCode": 200,
+      "body": { "message": true }
     }
   }
 }
